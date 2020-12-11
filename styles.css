@@ -1,0 +1,939 @@
+/* ------------------------------------Body--------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body
+{   
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------------New Nav bar------------------------------------- */
+
+nav a
+{
+    color: #E3F2FD;
+    font-size: 20px;
+}
+nav .logo img
+{
+    padding-top: 10px;
+    height: 45px;
+}
+nav
+{
+    background-color: #07393C;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 60%;
+}
+nav ul a
+{
+    transition: all 0.3s ease-in-out;
+}
+nav ul a:hover
+{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 2px;    
+}
+.menu-icon
+{
+    display: none;
+}
+.menu-icon div
+{
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: #E3F2FD;
+    transition: all 0.3s ease-in-out;
+}
+@media(max-width:768px)
+{
+    nav ul
+    {
+        position: fixed;
+        right: 0;
+        top: 8vh;
+        background-color: #07393C;
+        height: 92vh;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in-out;
+    }
+    nav .logo img
+    {
+        padding-top: 8px;
+        height: 30px;
+    }
+    .menu-icon
+    {
+        display: block;
+    }
+}
+@media(max-width:425px)
+{
+    nav ul
+    {
+        width: 50%;
+    }
+    nav .logo img
+    {
+        padding-top: 5px;
+        /* height: 30px; */
+        padding-right: 80px;
+    }
+}
+.nav-active
+{
+    transform: translateX(0%);
+}
+.toggle .line1
+{
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+.toggle .line2
+{
+    opacity: 0;
+}
+.toggle .line3
+{
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+
+/* ----------------------------------About me----------------------------------------- */
+#about-me
+{
+    background-image: url(images/Alfred.jpg);
+    background-position: top;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;    
+    height: 92vh;
+    color: rgb(251, 255, 254);
+}
+.overlay-about-me
+{      
+    background-color: rgba(0, 0, 0, 0.61);
+    height: 92vh;    
+}
+.content-about-me
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    padding-top: 80px;
+}
+.social-media
+{
+    overflow-x: hidden;
+    padding-left: 20px;
+    padding-right: 10rem;
+    padding-top: 7rem;    
+}
+.fa 
+{
+    padding: 10px 0px;
+    /* font-size: 10rem; */
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+  }
+.fa:hover
+{
+    opacity: 0.7;
+}
+.fa-linkedin 
+{
+    background: #007bb5;
+    color: white;
+}
+.fa-skype 
+{
+    background: #00aff0;
+    color: white;
+}
+.fa-facebook 
+{
+    background: #3B5998;
+    color: white;
+}
+.fa-google 
+{
+    background: #dd4b39;
+    color: white;
+}
+.fa-twitter 
+{
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram 
+{
+    background: #c74682;
+    color: white;
+}
+.my-views
+{
+    
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;   
+    font-size: 20px;
+    padding-left: 15rem;
+    padding-right: 8rem;
+    padding-top: 10rem;
+}
+
+
+@media(max-width:768px)
+{
+    .my-views
+    {
+        overflow-x: hidden;
+        font-size: 18px;
+        padding-left:10px;
+        padding-right: 2rem;
+        padding-top: 2.5rem;
+    }
+    .content-about-me .my-views h2
+    {
+        margin-bottom: 10px;
+    }
+    .content-about-me .my-views p
+    {
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .fa 
+    {
+        padding: 5px 0px;
+        width: 35px;
+        margin: 3px 1px;
+        border-radius: 7px;
+    }
+    .content-about-me
+    {
+        margin-left: 60px;
+        padding-top: 80px;
+    }
+    .social-media
+    {
+        overflow-x: hidden;
+        padding-left: 20px;
+        padding-right: 5rem;
+        padding-top: 7rem;    
+    }
+}
+@media(max-width:425px)
+{
+    #about-me
+    {
+        background-image: url(images/Alfred1.jpg);
+        background-position: left;
+        background-repeat: no-repeat;  
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .my-views
+    {
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 0;
+        padding-right: 1.5rem;
+        padding-top: 10rem;
+    }
+    .content-about-me .my-views h2
+    {
+        margin-bottom: 5px;
+    }
+    .content-about-me .my-views p
+    {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    .fa 
+    {
+        padding: 5px 0px;
+        width: 35px;
+    }
+    .content-about-me
+    {
+        margin-left: 20px;
+        padding-top: 25px;
+    }
+    .social-media
+    {
+        overflow-x: hidden;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-top: 0px;    
+    }
+}
+
+/* ------------------------------------------Industrial Experience---------------------------------- */
+
+/* --------------------------------------Internship--------------------------------------- */
+#industrial-exposure
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#industrial-exposure h2
+{
+    font-size: 35px;
+    margin: 30px 0px 15px 10px;
+}
+.internship
+{
+    color:black;
+    font-size: 20px;
+    /* padding-right: 20px; */
+}
+.internship h3
+{
+    /* color: black; */
+    font-size: 30px;
+    margin: 0px 0px 20px 40px;
+    margin-top: 0px;
+}
+.internship h4
+{
+    color: blue;
+    text-align: center;
+    margin: 30px 0px 20px 0px;
+    text-decoration: underline;
+}
+.internship p
+{
+    padding: 0px 20px 0px 20px;
+}
+.optical-communication
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.optical-communication img
+{
+    height: 280px;
+}
+.openCV-python
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.openCV-python img
+{
+    height: 380px;
+}
+.matlab-image
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.matlab-image img
+{
+    height: 450px;
+}
+.embedded-arduino
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.embedded-arduino img
+{
+    height: 340px;
+}
+@media(max-width:768px)
+{
+    #industrial-exposure
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #industrial-exposure h2
+    {
+        margin: 20px 0px 10px 5px;
+        font-size: 30px;
+    }
+    .internship
+    {
+        font-size: 17px;
+    }
+    .internship h3
+    {
+        font-size: 25px;
+        margin:20px 0px 10px 20px;
+    }
+    .internship h4
+    {
+        font-size: 20px;
+        margin: 25px 0px 10px 0px;
+    }
+    .internship p
+    {
+        padding: 0px 20px 20px 20px;
+        font-size: 18px;
+        text-align: left;
+    }
+    .optical-communication
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .optical-communication img
+    {
+        height: 250px;
+    }
+    .openCV-python
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .openCV-python img
+    {
+        height: 360px;
+    }
+    .matlab-image
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .matlab-image img
+    {
+        height: 400px;
+    }
+    .embedded-arduino
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .embedded-arduino img
+    {
+        height: 360px;
+    }
+}
+@media(max-width:425px)
+{
+    #industrial-exposure
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        /* overflow-y: hidden; */
+    }
+    #industrial-exposure h2
+    {
+        margin-bottom: 5px;
+        font-size: 23px;
+    }
+    .internship
+    {
+        /* padding-left: 6px; */
+        font-size: 16px;
+    }
+    .internship h3
+    {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .internship h4
+    {
+        margin: 15px 0px 0px 0px;
+    }
+    .internship p
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .optical-communication
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .optical-communication img
+    {
+        height: 160px;
+    }
+    .openCV-python
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .openCV-python img
+    {
+        height: 180px;
+    }
+    .matlab-image
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .matlab-image img
+    {
+        height: 260px;
+    }
+    .embedded-arduino
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .embedded-arduino img
+    {
+        height: 260px;
+    }
+}
+
+/* --------------------------------------Industrial Visit--------------------------------------------- */
+
+.industrial-visit h3
+{
+    margin: 0px 0px 20px 40px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+.company-images
+{
+    display: flex;
+    justify-content: space-around;
+}
+.company-images img
+{
+    margin: 20px 0px 30px 0px;
+    height: 200px;
+}
+@media(max-width:768px)
+{
+    .industrial-visit h3
+    {
+        margin: 20px 0px 15px 30px;
+        font-size: 27px;
+    }
+    .company-images img
+    {
+        height: 170px;
+    }
+}
+@media(max-width:425px)
+{
+    .industrial-visit h3
+    {
+        margin: 20px 0px 10px 25px;
+        font-size: 28px;
+    }
+    .company-images
+    {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+    .company-images img
+    {
+        margin: 10px 0px 10px 0px;
+        height: 180px;
+    }    
+}
+
+/* --------------------------------------Professional Skills------------------------------------------ */
+
+#professional-skills
+{
+    background-color: rgb(205, 222, 223);
+    padding-bottom: 25px;
+}
+#professional-skills h2
+{
+    background-color: darkcyan;
+    padding: 5px 5px;
+}
+.skills1
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px 50px 0px;
+}
+.skills1 img
+{
+    height: 200px;
+}
+.skills2
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0px 20px 0px;
+}
+.skills2 img
+{
+    height: 200px;
+}
+@media(max-width:768px)
+{
+    #professional-skills
+    {
+        padding-bottom: 20px;
+    }
+    #professional-skills h2
+    {
+        padding: 4px 8px;
+        font-size: 23px;
+    }    
+    .skills1
+    {
+        margin: 25px 0px 40px 0px;
+    }
+    .skills1 img
+    {
+        height: 160px;
+    }
+    .skills2
+    {
+        margin: 25px 0px 15px 0px;
+    }
+    .skills2 img
+    {
+        height: 160px;
+    }
+}
+@media(max-width:425px)
+{
+    #professional-skills
+    {
+        padding-bottom: 40px;
+    }
+    #professional-skills h2
+    {
+        padding: 4px 8px;
+        font-size: 23px;
+    }  
+    .skills1
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        float: right;
+        margin: 25px 0px 0px 0px;
+    }
+    .skills1 img
+    {
+        height: 100px;
+    }
+    .skills2
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        margin: 25px 0px 0px 0px;
+    }
+    .skills2 img
+    {
+        height: 100px;
+    }
+}
+
+
+/* -----------------------------------------Projects---------------------------------------------- */
+#project-industry-image
+{
+    background-image: url(images/electronics1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-top: 25px; */
+}
+.overlay-project-industry
+{
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 100vh;
+}
+#project-industry-image h2
+{
+    margin-top: 0px;
+    margin-left: 15px;
+}
+#project-industry-image h3
+{
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+#project-industry-image p
+{
+    margin: 5px 8px 5px 60px;
+    /* margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px; */
+}
+
+@media(max-width:768px)
+{
+    #project-industry-image
+    {
+        font-size: 16px;
+    } 
+    #project-industry-image h2
+    {
+        margin-left: 8px;
+        font-size: larger;
+    }
+    #project-industry-image h3
+    {
+        margin-left: 25px;
+        font-size: large;
+    }
+    #project-industry-image p
+    {
+        margin: 7px 8px 5px 50px;
+    }
+}
+
+
+/* --------------------------------------Hobbies------------------------------------------------ */
+#hobbies
+{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#hobbies img
+{
+    height: 150px;    
+}
+@media(max-width:500px)
+{
+    #hobbies
+    {
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #hobbies img
+    {
+        height: 70px;   
+    }
+}
+
+/* --------------------------------------Footer------------------------------------------------- */
+
+.contact-form
+{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 8rem;
+    padding-top: 2.5rem;
+}
+footer a
+{
+    color: blue;
+    font-size: x-large;
+    font-style: italic;
+}
+footer a:hover
+{
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: bold;
+}
+
+/* ------------------------------------Contact form----------------------------------------- */
+
+.container
+{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.overlay-contact
+{
+  background-color: rgba(0, 0, 0, 0.692);
+  height: 100%;
+    
+}
+.overlay-contact a
+{
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 30px;
+}
+#contact-section
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url(images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#contact-section .container h2
+{
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: rgb(238, 235, 235);
+  letter-spacing: 2px;
+}
+#contact-section .container p
+{
+  text-align: center; 
+  width: 70%; 
+  margin-left: auto;
+  margin-right: auto; 
+  padding-bottom: 3%;
+  color: #fff;
+  letter-spacing:3px;
+}
+.contact-address i.fa
+{
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  cursor: pointer;
+  border:2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+.contact-address i.fa:hover
+{
+  cursor: pointer;
+  border:2px solid blue;
+  color: red;
+}
+.contact-address
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+.form-info
+{
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+}
+input
+{
+  padding: 10px;
+  margin:10px;
+  width: 70%;
+  background-color:rgba(136, 133, 133, 0.5);
+  color: white;
+  border: none;
+  outline:none;
+}
+input::placeholder
+{
+  color: white;
+}
+textarea
+{
+  padding: 10px;
+  margin: 10px;     
+  width: 70%;
+  background-color:rgba(136, 133, 133, 0.5);
+  color: white;
+  border: none;
+  outline:none;
+}
+textarea::placeholder
+{
+  color: white;
+}  
+.submit
+{
+  width: 70%;
+  background: none;
+  padding: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3%;
+  border:2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+.submit:hover
+{
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 768px)
+{
+  #contact-section .contact-address
+  {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #contact-section .submit
+  {
+    width: 60%;
+  }
+}
+@media(max-width:425px)
+{
+  .container h2
+  {
+    font-size: 20px;
+  }#contact-section
+  {
+    height: 100%;
+  }
+}
+

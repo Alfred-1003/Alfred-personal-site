@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="tensketch assignment">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/alfred-logo.png" alt="my-logo"></a>
+        </div>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#industrial-exposure">Industrial Exposure</a></li>
+            <li><a href="#professional-skills">Professional Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <!-------------------------------------About me--------------------------------->
+    <header id="about-me">
+        <div class="overlay-about-me">
+           <div class="content-about-me">
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/alfred-p-878028169/" class="fa fa-linkedin"></a>
+                    <a href="https://join.skype.com/invite/pqOm1aiWXXYv" class="fa fa-skype"></a>
+                    <a href="https://www.facebook.com/Alfred1003" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/Alfred_10032000" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/alfred_1003/" class="fa fa-instagram"></a>
+                </div>
+                <div class="my-views">             
+                    <h2>Hi! 👋<br> I'm Alfred P, </h2> <h3>an Electronics and Communication Engineer from <br> TamilNadu, India. </h3>
+                    <p>An Electronics Engineer turned web developer passionate about leveraging my technical background
+                        to break down challenging problems and create delighful and scalable user experiences.
+                        A recent graduate of Anna University with Bachelor's program.
+                    </p> 
+                </div> 
+           </div>
+        </div>
+    </header>  
+
+    <!-----------------------------------Industrial Exposure-------------------------------------->
+            
+    <section id="industrial-exposure">
+        <h2>Industrial Exposure</h2>
+        <div class="internship">
+            <h3>Internship</h3>
+            <h4>Optical Fiber Communication</h4>
+            <div class="optical-communication">
+                <p>
+                    In fiber communication the fusion splice protection sleeve, Strip the fiber. Strip back all fiber coatings down
+                    to the 125um bare fiber. Clean the bare fiber with 99% isopropyl alcohol, Cleave the fiber.
+                    The fiber needs to be cleaved with a high precision cleaver. Most splicing machines come with a 
+                    recommended cleaver. Fiber cleaving is a very important step as the quality of the splice will depend 
+                    on the quality of the cleave, Put the fibers into the fiber holders in the fusion splicer. Press 
+                    the start button to start the fusion splicing Heat shrink the protection sleeve to protect the splicing joint.
+                </p>
+                <img src="images/fiber.jpg" alt="optical-communication">
+                <img src="images/fiber2.jpg" alt="optical-communication1">
+            </div>
+            <h4>Computer Vision using OpenCV and Python</h4>
+            <div class="openCV-python">
+                <p>
+                    I opted to detect the plastic ball by colour so I need to set the colour range that I can use to classify each 
+                    coloured ball. I use an array to hold the values of the lower and upper colour threshold. The colour threshold 
+                    uses the HSV (Hue Saturation Value) colour profile. Before I can use the HSV profile values that define the coloured ball,
+                    I must convert the captured image to the HSV colour profile. Here I use the colour range I set for the ball to create a mask.  
+                    The mask will make it more efficient to find contours around the detected object. The white area is the area of interest that was 
+                    found within the colour range set above. I can use various image filters to improve the image mask. Now with image mask we can proceed with
+                    finding contours. All the white blobs in the mask will have contours applied. If the quality of the mask is noisy, there is going to be a lot of contours – many small contours. To get useful object detection, 
+                    I need to remove the contours I do not need.
+                </p>
+                <img src="images/image-processing.jpg" alt="computer-vision">
+            </div>
+            <h4>Matlab using Image Processing</h4>
+            <div class="matlab-image">
+                <p>
+                    Image segmentation can be achieved in different ways those are  thresholding, region growing, water sheds 
+                    and contours. To extract information regarding tumour, at first in the pre-processing level, the extra parts
+                    which are outside the skull and don't have any helpful information are removed and then anisotropic diffusion 
+                    filter is applied to the MRI images to remove noise. By applying the fast bounding box (FBB) algorithm, the 
+                    tumour area is displayed on the MRI image with a bounding box and. Then Support Vector Machine classifies the
+                    boundary and extracts the tumour.
+                </p>
+                <img src="images/matlab-brain.jpg" alt="matlab-image1">
+            </div>
+            <h4>Embedded Systems with Arduino</h4>
+            <div class="embedded-arduino">
+                <p>
+                    ESP8266 wifi module enables internet connectivity to embedded applications, It uses TCP/UDP communication 
+                    protocol to connect with server/client. To communicate with the ESP8266 wifi module, microcontroller needs 
+                    to use set of AT commands to communicates with ESP8266 wifi module using UART having specified Baud rate. 
+                    At the client end, we need to check ESP8266 responses on the serial terminal of PC/Laptop. Connect ESP8266 
+                    module transmit pin (TX) to the receive pin (RX) of Arduino UNO and to receive pin (RX) of USB to serial 
+                    converter to PC/Laptop. Open the serial terminal on PC/Laptop to see the ESP8266 responses for the AT 
+                    command sent from Arduino UNO.
+                </p>
+                <img src="images/embedded-arduino.jpg" alt="Arduino">
+            </div>
+        </div> 
+
+        <div class="industrial-visit">
+            <h3>Industrial Visit</h3>
+            <div class="company-images"> 
+                <img src="images/narl.png" alt="narl-logo">
+                <img src="images/dd.png" alt="dd-logo">
+                <img src="images/air.png" alt="air-logo">
+            </div>
+        </div>
+    </section>          
+         
+    <!--------------------------------Professional skills------------------------------------->
+    <section id="professional-skills">
+        <h2 >Professional Skills</h2>
+        <div class="skills1">
+            <img src="images/python.png" alt="python">   
+            <img src="images/java.png" alt="java">
+            <img src="images/c-lang.png" alt="c-programming">  
+            <img src="images/c++lang.png" alt="c++programming">
+        </div> 
+        <div class="skills2">
+            <img src="images/html.png" alt="html">
+            <img src="images/css.png" alt="css">
+            <img src="images/javascript.png" alt="javascript">
+            <img src="images/Matlab.png" alt="matlab">
+        </div> 
+    </section> 
+    
+    <!--------------------------------Projects--------------------------------------------->
+    <section id="project-industry-image">
+        <div class="overlay-project-industry">
+            <h2>Projects</h2>  
+            <div id="projects">
+                <h3>Fingerprint Detection</h3>
+                <p>Used biometric solution for authentication on computerized systems and to verify the 
+                    authenticity of one person by his fingerprint. The user provides his fingerprint together with
+                    his identity information like his ID number. The fingerprint verification system retrives the
+                    fingerprint template according to the ID number and matches the template with the real time 
+                    acquired fingerprint from the user which is done using Image Processing (Matlab).</p>
+                <h3>Object detection and Tracking</h3>
+                <p>Object detection and tracking is the techniques that can be used to identify moving parts in 
+                    a video. The process is frame differencing, colorspaces between two different videos, background 
+                    seperation, Haar cascade classifiers for face detection, eye detection, nose detection and finally 
+                    canny's edge detection is done using Image Processing OpenCV (Python).</p>
+                <h3>License Plate Recognition using Python</h3>
+                <p>The first step is to detect the license plate from the car. We will use the contour option in openCV 
+                    to detect for rectangular object to find the number plate for license plate recognition. Character 
+                    segmentation, once we have detected the license plate we have to crop it out and save it as a new 
+                    image. Character recognition, new image that we obtain in the previous step is sure to have some
+                    Characters written using Image Processing OpenCV (Python).</p>
+            </div>  
+        </div>
+    </section>     
+
+
+    <!----------------------------------------Hobbies---------------------------------------->
+    <h2>Hobbies</h2>   
+   <div id="hobbies"> 
+       <div>
+            <img src="images/photoshop.png" alt="photoshop">
+        </div>   
+       <div>
+            <img src="images/videoediting.png" alt="video-editing">
+       </div>
+       <div>
+            <img src="images/cycling.png" alt="cycling">
+        </div>   
+       <div>
+            <img src="images/programming.png" alt="computer-programming">
+       </div>    
+    </div> 
+   
+   <!-----------------------------------------Footer--------------------------------------------->
+    <footer id="contact">
+        <!-- <div class="contact-form">
+            <a href="form.html">Contact</a> <br>
+            <a href="images/Alfred.pdf">My Resume</a> <br>
+        </div>        -->
+
+        <section id="contact-section">
+            <div class="overlay-contact">
+                <!-- <a href="index.html">My Resume</a> -->
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Email me and keep upto date with my latest news</p>
+                    <div class="contact-address">    
+                        <div>
+                            <i class="fa fa-map-marker fa-lg"></i><span class="form-info"> Thiruvannamalai 606603</span><br>
+                            <i class="fa fa-phone fa-lg"> </i><span class="form-info"> +91 9487665622</span><br>
+                            <i class="fa fa-envelope fa-lg"></i><span class="form-info"> palfred1003@gmail.com</span>
+                        </div>          
+                        <div class="contact-form">        
+                            <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Last Name"><br>
+                            <input type="Email" placeholder="Email" required><br>
+                            <input type="text" placeholder="Subject of this message"><br>
+                            <textarea name="message" placeholder="Message" rows="8" required></textarea><br>
+                            <button class="submit" >Send Message</button> 
+                            </form>   
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <a href="images/resume.pdf">My Resume</a> <br>
+        &copy; Copyright 2020 Alfred
+    </footer>   
+
+    <script>
+        const navSlide=()=>
+        {
+            const menu=document.querySelector('.menu-icon');
+            const nav=document.querySelector('nav ul');
+            menu.addEventListener('click',()=>
+            {
+                nav.classList.toggle('nav-active');
+                menu.classList.toggle('toggle');
+            });
+        }
+        navSlide();
+    </script>
+
+</body>
+</html>
